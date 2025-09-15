@@ -197,17 +197,4 @@ Visit the live application: [https://drug-monitor.herokuapp.com](https://drug-mo
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
 
-**My Uyen** - [GitHub Profile](https://github.com/myuyen0304)
-
-## 🙏 Acknowledgments
-
-- Bootstrap team for the responsive framework
-- MongoDB team for the database solution
-- Express.js community for the web framework
-- All healthcare workers who inspired this project
-
----
-
-**Made with ❤️ for better healthcare management**
