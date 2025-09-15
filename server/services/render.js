@@ -46,33 +46,6 @@ exports.dosage = function (req, res) {
     });
 };
 
-// exports.purchase = function (req, res) {
-//   const days = Number(req.query.days) || 30;
-
-//   axios
-//     .get(`${BASE_URI}:${PORT}/api/drugs`)
-//     .then(function (response) {
-//       console.log(response.data);
-//       const drugs = response.data.map((drug, idx) => {
-//         const perDay = Number(drug.perDay || 0);
-//         const card = Number(drug.card || 1);
-//         const cardsToBuy = Math.ceil(perDay * days);
-//         const packsToBuy = Math.ceil(cardsToBuy / card);
-//         return {
-//           id: idx + 1,
-//           name: drug.name,
-//           cardsToBuy,
-//           packsToBuy,
-//           cardPerPack: card,
-//         };
-//       });
-
-//       res.render("purchase", { days, drugs, title: "Purchase Drugs" });
-//     })
-//     .catch((err) => {
-//       res.render("error", { message: "Có lỗi xảy ra. Vui lòng thử lại sau!" });
-//     });
-// };
 exports.purchase= function(req, res) {
     const days = Number(req.query.days) || 30; // lấy số ngày từ query, mặc định 30
     // Make a get request to /api/users
